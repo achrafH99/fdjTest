@@ -24,3 +24,6 @@ GET /api/players/team/:id : Récupère la liste des joueurs d'une équipe spéci
 ### Leagues
 GET /api/leagues : Récupère la liste de toutes les ligues.
 GET /api/leagues/:id : Récupère les informations d'une ligue spécifique en fonction de son ID.
+
+Pour la partie frontend, le chemin principal (à la racine) affichera la barre de recherche permettant de chercher une ligue, en séléctionnant un des choix cela affichera les clubs de cette ligue.
+Suite à cela séléctionner un club permettera d'afficher les joueurs de ce dernier.
