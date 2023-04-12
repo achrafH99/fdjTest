@@ -5,12 +5,13 @@ Node.js
 MongoDB
 Redis
 ## Installation
-Cloner ce dépôt de code : git clone https://github.com/your-username/your-project.git
-Installer les dépendances : npm install
-Créer un fichier .env à la racine du projet en se basant sur le modèle fourni dans .env.example et y remplir les variables d'environnement nécessaires.
-Lancer le serveur : npm start
+Le projet se décompose en deux dossier principaux backend (node) et frontend (angular) 
+Cloner ce dépôt de code : https://github.com/achrafH99/fdjTest.git
+Installer les dépendances dans chaque dossier avec la commande : npm install
+Lancer le serveur backend : node index.js
+Lancer le serveur frontend : ng serve
 ## Utilisation
-Le serveur fonctionne sur le port défini dans la variable d'environnement PORT. Pour accéder aux différentes fonctionnalités de l'API, vous pouvez utiliser les routes suivantes :
+Le serveur fonctionne sur le port défini dans la variable d'environnement par défaut, 3000 pour le backend et 4200 pour le frontend. Pour accéder aux différentes fonctionnalités de l'API, vous pouvez utiliser les routes suivantes pour le backend :
 
 ### Teams
 GET /api/teams : Récupère la liste de toutes les équipes.
