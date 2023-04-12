@@ -1,0 +1,16 @@
+<div class="header">
+  <div class="row ">
+    <div class="col-3">
+      <a class="back d-flex justify-content-center align-items-center" (click)="goBack()"><i
+          class="fa fa-angle-left fa-2x"></i>
+        Back</a>
+    </div>
+    <div class="col-6">
+      <h1 class="d-flex justify-content-center ">{{teamName}}</h1>
+    </div>
+  </div>
+</div>
+
+<div *ngFor="let player of players">
+  <app-player-details [player]="player"></app-player-details>
+</div>

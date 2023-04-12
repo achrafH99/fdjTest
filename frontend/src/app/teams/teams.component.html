@@ -1,0 +1,13 @@
+<app-search-bar (leagueSelected)="getTeams($event)" class="search-bar"></app-search-bar>
+<div class="d-flex justify-content-center align-items-center">
+  <div class="container">
+    <div class=" row">
+      <div *ngFor="let team of teams" class="col-6">
+        <div class="logo-container d-flex justify-content-center">
+          <a class="d-flex justify-content-center" [routerLink]="['/players',team._id]"> <img [src]="team.thumbnail"
+              class="logo"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

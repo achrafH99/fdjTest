@@ -1,0 +1,8 @@
+.typeahead-container.flex-column {
+  max-height: 200px; /* optionnel: ajouter une hauteur max */
+  overflow-y: auto; /* optionnel: ajouter une barre de défilement */
+}
+
+.visually-hidden {
+  display: none;
+}

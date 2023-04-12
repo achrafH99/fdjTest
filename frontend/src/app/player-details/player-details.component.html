@@ -1,0 +1,31 @@
+<div class="player-detail" *ngIf="player">
+
+  <div class="row">
+    <div class="col-3">
+      <img [src]="player.thumbnail" class="player-img">
+    </div>
+    <div class="col-9">
+      <div class="row">
+        <div class="col">
+          <h2><b>{{player.name}}</b></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>{{player.position}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>birthDate : {{player.born | date:'YYYY-LL-dd'}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>price : {{player.signin.amount | currency:(player.signin.currency | uppercase):'symbol':'1.2-2':'fr'}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
